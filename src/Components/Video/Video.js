@@ -10,7 +10,9 @@ class Video extends React.Component {
   render() {
     return (
       <ListGroup>
-        <ListGroupItem>
+        <ListGroupItem
+          onClick={() => this.props.onVideoSelect(this.props.video)}
+        >
           <Media className="spacing">
             <Media left href="#">
               <Media
