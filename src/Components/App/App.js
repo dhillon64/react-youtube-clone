@@ -1,7 +1,9 @@
 import React from "react";
 import SearchBar from "../SearchBar/SearchBar";
+import VideoList from "../VideoList/VideoList";
 import "./App.css";
 import axios from "axios";
+import { Container, Row, Col } from "reactstrap";
 
 class App extends React.Component {
   constructor(props) {
@@ -24,13 +26,21 @@ class App extends React.Component {
       }
     );
     this.setState({ videos: response.data.items });
+    console.log(response);
   }
 
   render() {
     return (
       <div>
         <SearchBar onSubmit={this.onSearchSubmit} />
-        we have {this.state.videos.length} videos
+        <Container className="themed-container" fluid={true}>
+          <Row>
+            <Col xs="8"></Col>
+            <Col xs="4">
+              <VideoList videos={this.state.videos} />
+            </Col>
+          </Row>
+        </Container>
       </div>
     );
   }
