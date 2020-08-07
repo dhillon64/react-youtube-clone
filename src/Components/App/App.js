@@ -6,6 +6,8 @@ import axios from "axios";
 class App extends React.Component {
   constructor(props) {
     super(props);
+    this.state = { videos: [] };
+    this.onSearchSubmit = this.onSearchSubmit.bind(this);
   }
 
   async onSearchSubmit(term) {
@@ -21,10 +23,16 @@ class App extends React.Component {
         },
       }
     );
+    this.setState({ videos: response.data.items });
   }
 
   render() {
-    return <SearchBar onSubmit={this.onSearchSubmit} />;
+    return (
+      <div>
+        <SearchBar onSubmit={this.onSearchSubmit} />
+        we have {this.state.videos.length} videos
+      </div>
+    );
   }
 }
 
