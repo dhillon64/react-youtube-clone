@@ -48,10 +48,10 @@ class App extends React.Component {
         <SearchBar onSubmit={this.onSearchSubmit} />
         <Container className="themed-container" fluid={true}>
           <Row>
-            <Col xs="8">
+            <Col xs="12" md="12" xl="8">
               <VideoDetail video={this.state.selectedVideo} />
             </Col>
-            <Col xs="4">
+            <Col xs="12" md="12" xl="4">
               <VideoList
                 onVideoSelect={this.onVideoSelect}
                 videos={this.state.videos}

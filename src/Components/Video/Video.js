@@ -9,7 +9,7 @@ class Video extends React.Component {
 
   render() {
     return (
-      <ListGroup>
+      <ListGroup flush>
         <ListGroupItem
           onClick={() => this.props.onVideoSelect(this.props.video)}
         >
