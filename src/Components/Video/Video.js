@@ -9,7 +9,7 @@ class Video extends React.Component {
 
   render() {
     return (
-      <ListGroup flush>
+      <ListGroup>
         <ListGroupItem
           onClick={() => this.props.onVideoSelect(this.props.video)}
         >
@@ -23,7 +23,9 @@ class Video extends React.Component {
               />
             </Media>
             <Media body className="text-space">
-              <Media heading>{this.props.video.snippet.title}</Media>
+              <Media heading className="title">
+                {this.props.video.snippet.title}
+              </Media>
               {this.props.video.snippet.channelTitle}
             </Media>
           </Media>
