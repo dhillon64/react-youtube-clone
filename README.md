@@ -1,3 +1,8 @@
+This App was built with create-react-app and displays videos when the user searches using the YouTube Data API. Reactstrap was used to help with the styling of the app. 
+
+![project1full](https://user-images.githubusercontent.com/67638060/96157077-c0480600-0f09-11eb-9150-0ad1751c20d6.png)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
