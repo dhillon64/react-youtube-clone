@@ -1,4 +1,5 @@
 This App was built with create-react-app and displays videos when the user searches using the YouTube Data API. Reactstrap was used to help with the styling of the app. 
+Deployed App can be viewed at:https://objective-mcclintock-9be144.netlify.app
 
 ![project1full](https://user-images.githubusercontent.com/67638060/96157077-c0480600-0f09-11eb-9150-0ad1751c20d6.png)
 
